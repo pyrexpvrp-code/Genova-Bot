@@ -1,0 +1,16 @@
+{
+  "ticketTitle": "Apri un ticket",
+  "ticketDescription": "Premi il pulsante qui sotto per aprire un ticket di supporto.",
+  "ticketColor": "#0099ff",
+  "ticketButtonLabel": "Apri ticket",
+  "ticketCloseButtonLabel": "Chiudi ticket",
+  "ticketFooter": "Supporto Genova-Bot",
+  "ticketBannerUrl": "",
+  "ticketFields": [
+    {
+      "name": "Supporto",
+      "value": "Fornisci qui il motivo del ticket",
+      "inline": false
+    }
+  ]
+}
