@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Ticket</title>
+  <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+  <main>
+    <h1>Dashboard Personalizzazione Ticket</h1>
+    <form id="ticket-form">
+      <label>Titolo pannello
+        <input type="text" name="ticketTitle" required>
+      </label>
+
+      <label>Descrizione
+        <textarea name="ticketDescription" rows="3" required></textarea>
+      </label>
+
+      <label>Colore embed
+        <input type="text" name="ticketColor" placeholder="#0099ff" required>
+      </label>
+
+      <label>Label bottone apertura
+        <input type="text" name="ticketButtonLabel" required>
+      </label>
+
+      <label>Label bottone chiusura
+        <input type="text" name="ticketCloseButtonLabel" required>
+      </label>
+
+      <label>Footer embed
+        <input type="text" name="ticketFooter">
+      </label>
+
+      <label>Banner URL
+        <input type="url" name="ticketBannerUrl" placeholder="https://...">
+      </label>
+
+      <label>Campi embed (JSON)
+        <textarea name="ticketFields" rows="6"></textarea>
+      </label>
+
+      <div class="buttons">
+        <button type="submit">Salva configurazione</button>
+        <button type="button" id="reset-button">Reset valori</button>
+      </div>
+    </form>
+    <div id="status"></div>
+  </main>
+  <script src="/dashboard.js"></script>
+</body>
+</html>
