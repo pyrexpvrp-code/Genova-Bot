@@ -59,7 +59,7 @@ client.on('messageCreate', async (message) => {
 
   if (command === '!close') {
     if (!message.channel.name.startsWith('ticket-')) {
-      return message.reply('Questo comando può essere usato solo all'interno di un canale ticket.');
+      return message.reply('Questo comando può essere usato solo all\'interno di un canale ticket.');
     }
     await message.reply('Ticket chiuso, il canale verrà eliminato tra 10 secondi.');
     setTimeout(() => {
